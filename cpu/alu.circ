@@ -607,6 +607,7 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(670,560)" name="Shifter">
+      <a name="shift" val="lr"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="5" loc="(1250,145)" name="Text">
