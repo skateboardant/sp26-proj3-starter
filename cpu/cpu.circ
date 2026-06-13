@@ -39,13 +39,13 @@
       <a name="font" val="SansSerif plain 12"/>
     </tool>
   </lib>
-  <lib desc="file#alu.circ" name="6"/>
-  <lib desc="file#partial-store.circ" name="7"/>
-  <lib desc="file#imm-gen.circ" name="8"/>
-  <lib desc="file#control-logic.circ" name="9"/>
-  <lib desc="file#branch-comp.circ" name="10"/>
-  <lib desc="file#regfile.circ" name="11"/>
-  <lib desc="file#partial-load.circ" name="12"/>
+  <lib desc="file#control-logic.circ" name="6"/>
+  <lib desc="file#branch-comp.circ" name="7"/>
+  <lib desc="file#partial-load.circ" name="8"/>
+  <lib desc="file#imm-gen.circ" name="9"/>
+  <lib desc="file#alu.circ" name="10"/>
+  <lib desc="file#partial-store.circ" name="11"/>
+  <lib desc="file#regfile.circ" name="12"/>
   <main name="cpu"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -707,9 +707,9 @@
       <a name="label" val="sp"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="10" loc="(1410,760)" name="branch_comp"/>
-    <comp lib="11" loc="(910,1120)" name="regfile"/>
-    <comp lib="12" loc="(2740,590)" name="partial_load"/>
+    <comp lib="10" loc="(1610,1410)" name="alu"/>
+    <comp lib="11" loc="(2030,430)" name="partial_store"/>
+    <comp lib="12" loc="(910,1120)" name="regfile"/>
     <comp lib="2" loc="(1250,1920)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
@@ -759,10 +759,10 @@
     <comp lib="5" loc="(480,100)" name="Text">
       <a name="text" val="From IMEM"/>
     </comp>
-    <comp lib="6" loc="(1610,1410)" name="alu"/>
-    <comp lib="7" loc="(2030,430)" name="partial_store"/>
-    <comp lib="8" loc="(620,1580)" name="imm_gen"/>
-    <comp lib="9" loc="(360,1880)" name="control_logic"/>
+    <comp lib="6" loc="(360,1880)" name="control_logic"/>
+    <comp lib="7" loc="(1410,760)" name="branch_comp"/>
+    <comp lib="8" loc="(2740,590)" name="partial_load"/>
+    <comp lib="9" loc="(620,1580)" name="imm_gen"/>
     <wire from="(1050,190)" to="(1050,220)"/>
     <wire from="(1070,210)" to="(1120,210)"/>
     <wire from="(1130,720)" to="(1160,720)"/>
